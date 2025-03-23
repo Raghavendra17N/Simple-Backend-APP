@@ -1,6 +1,6 @@
 # map-be
 
-A React.js application served using **Nginx** and deployed on **Google Cloud Run**.
+A FastAPI application served and deployed on **Google Cloud Run**.
 
 ## 🚀 Features
 - React frontend built with Node.js
@@ -20,12 +20,12 @@ cd map-be
 
 ### **2️⃣ Install Dependencies**
 ```sh
-npm install
+pip install -r requirements.txt
 ```
 
 ### **3️⃣ Run Locally**
 ```sh
-npm start
+uvicorn main:app --host 0.0.0.0 --port 8080
 ```
 App runs on `http://localhost:3000`
 
